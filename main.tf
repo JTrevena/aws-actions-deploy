@@ -15,6 +15,6 @@ resource "aws_vpc" "example" {
   cidr_block = "10.0.0.0/16"
 
   tags = {
-    Name: "Example VPC (created by terraform and GitHub CI)"
+    Name: "VPC1 (Created with Terraform & GitHub CI)"
   }
 }
