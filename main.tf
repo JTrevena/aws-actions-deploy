@@ -8,9 +8,13 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-east-1"
+  region = "eu-west-2"
 }
 
 resource "aws_vpc" "example" {
   cidr_block = "10.0.0.0/16"
+
+  tags = {
+    Name: "Example VPC (created by terraform and GitHub CI)"
+  }
 }
